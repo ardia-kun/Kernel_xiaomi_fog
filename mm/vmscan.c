@@ -189,13 +189,6 @@ int kswapd_threads_current = DEF_KSWAPD_THREADS_PER_NODE;
  */
 int vm_swappiness = 200;
 
-#ifdef CONFIG_OPLUS_MM_HACKS
-/*
- * Direct reclaim swappiness, values range from 0 .. 60. Higher means more swappy.
- */
-int direct_vm_swappiness = 150;
-#endif /* CONFIG_OPLUS_MM_HACKS */
-
 /*
  * The total number of pages which are beyond the high watermark within all
  * zones.
